@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style/css/styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div>
+                <h1 class = "header_text">Do you own <i><b>enough</b></i> Bitcoin?</h1>
+            </div>
+            <div class="wrapper">
+                <img src="style/images/btc3.png" alt="Bitcoin Image" id="btc3">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id="yesButton" onmouseover="moveButton()"><b>Yes</b></button>
+                <button class="btn" id="noButton" onclick="nextPage()"><b>No</b></button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "no.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('yesButton').offsetWidth);
+                        var y = Math.random() * (window.innerHeight - document.getElementById('yesButton').offsetHeight);
+                        document.getElementById('yesButton').style.left = `${x}px`;
+                        document.getElementById('yesButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>       
+        </div>
+    </body>
+</html>

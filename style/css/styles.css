@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2a1243;
+}
+
+/* "Yes" button styling */
+#yesButton {
+    position: absolute;
+    left: 825px; /* Initial horizontal position */
+    transition: 0.5s;
+}
+
+/* "No" button styling */
+#noButton {
+    position: absolute;
+    right: 825px; /* Initial position from the right */
+    transition: 0.5s;
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(104, 69, 170);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.btn {
+    background-color: #f48d07;
+    color: #2a1243;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c38220;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the centered image */
+#btc3 {
+    width: 200px;
+    height: auto;
+}
